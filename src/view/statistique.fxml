@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.statistiqueController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="662.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/th.jpg" />
+         </image>
+      </ImageView>
+      <GridPane prefHeight="433.0" prefWidth="663.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="370.0" minHeight="10.0" prefHeight="366.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="192.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="344.0" prefWidth="600.0">
+               <children>
+               <BarChart fx:id="barChart" layoutX="-1.0" layoutY="14.0" prefHeight="400" prefWidth="650" title="Patient Statistics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis label="Clinic Name" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Number of Patients" side="LEFT" />
+        </yAxis>
+      </BarChart>
+                  
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="precedant" layoutX="532.0" layoutY="11.0" mnemonicParsing="false" onAction="#revenir" prefHeight="45.0" prefWidth="107.0" style="-fx-background-color: #03d3a6;" text="Retour" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

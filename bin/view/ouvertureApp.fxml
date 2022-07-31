@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="splashAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="580.0" style="-fx-background-color: #09e2a7;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ouvertureAppController">
+   <cursor>
+      <Cursor fx:constant="S_RESIZE" />
+   </cursor>
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="86.0" layoutX="233.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/2cf7c5ba-bbc3-4a1a-b097-168476d0217f-Glamouros-logo-design-01-1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="213.0" layoutY="241.0" text="téléchargement..." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="152.0" text="Gestion Cabinet" textAlignment="CENTER" textFill="#f8f3f3" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Bold" size="63.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
